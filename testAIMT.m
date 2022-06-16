@@ -35,6 +35,8 @@ end;
 %% Draw a line along the aorta
 xtmp=xvideo(:,:,1);
 imagesc(xtmp)
+fprintf('Please draw a line within the aorta \n')
+
 roi = drawline();
 pos=roi.Position;
 bc=mean(pos(:,1));
